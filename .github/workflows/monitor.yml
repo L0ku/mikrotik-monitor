@@ -18,15 +18,6 @@ jobs:
           sudo apt-get install -y expect telnet
           
       - name: Run Monitor
-        env:
-          MT1_HOST: ${{ secrets.MT1_HOST }}
-          MT1_PORT: ${{ secrets.MT1_PORT }}
-          MT1_USER: ${{ secrets.MT1_USER }}
-          MT1_PASS: ${{ secrets.MT1_PASS }}
-          MT2_HOST: ${{ secrets.MT2_HOST }}
-          MT2_PORT: ${{ secrets.MT2_PORT }}
-          MT2_USER: ${{ secrets.MT2_USER }}
-          MT2_PASS: ${{ secrets.MT2_PASS }}
         run: |
           chmod +x monitor.sh
           ./monitor.sh

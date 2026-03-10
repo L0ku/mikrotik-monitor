@@ -40,9 +40,9 @@ ping_mikrotik() {
 log "=== MikroTik VPN Monitor Started ==="
 
 # MikroTik 1
-ping_mikrotik "${MT1_HOST:-185.9.139.65}" "${MT1_PORT:-6677}" "${MT1_USER:-loku}" "${MT1_PASS:-loku@12#}"
+ping_mikrotik "185.9.139.65" "6677" "loku" 'loku@12#'
 
 # MikroTik 2  
-ping_mikrotik "${MT2_HOST:-158.173.160.34}" "${MT2_PORT:-6677}" "${MT2_USER:-loku}" "${MT2_PASS:-loku!@34}"
+ping_mikrotik "158.173.160.34" "6677" "loku" 'loku!@34'
 
 log "=== Monitor Finished ==="
